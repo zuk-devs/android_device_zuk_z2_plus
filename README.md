@@ -1,1 +1,1 @@
-Device configuration for ZUK Z2
+Device configuration for ZUK Z2 Plus
