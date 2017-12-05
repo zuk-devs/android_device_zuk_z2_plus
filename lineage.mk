@@ -26,10 +26,12 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_z2_plus
 PRODUCT_DEVICE := z2_plus
-PRODUCT_BRAND := Zuk
+PRODUCT_BRAND := ZUK
 PRODUCT_MODEL := Z2 Plus
-PRODUCT_MANUFACTURER := Zuk
+PRODUCT_MANUFACTURER := ZUK
 PRODUCT_GMS_CLIENTID_BASE := android-zuk
+TARGET_VENDOR_PRODUCT_NAME := z2_plus
+TARGET_VENDOR_DEVICE_NAME := z2_plus
 
 # Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
@@ -38,4 +40,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT="ZUK/z2_plus/z2_plus:7.0/NRD90M/2.5.412_170428:user/release-keys" \
     PRIVATE_BUILD_DESC="z2_plus-user 7.0 NRD90M 2.5.412_170428 release-keys"
 
-TARGET_VENDOR := Zuk
+TARGET_VENDOR := zuk
