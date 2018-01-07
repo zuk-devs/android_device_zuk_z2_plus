@@ -35,6 +35,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     lights.msm8996
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.zuk.usb.rc
