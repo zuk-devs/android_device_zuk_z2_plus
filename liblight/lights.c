@@ -1,7 +1,8 @@
 /*
  * Copyright (C) 2008 The Android Open Source Project
  * Copyright (C) 2014 The Linux Foundation. All rights reserved.
- * Copyright (C) 2015 The CyanogenMod Project
+ * Copyright (C) 2015-2016 The CyanogenMod Project
+ * Copyright (C) 2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -41,71 +42,71 @@ static struct light_state_t g_attention;
 static struct light_state_t g_notification;
 static struct light_state_t g_battery;
 
-char const*const RED_LED_FILE
-        = "/sys/class/leds/led:rgb_red/brightness";
+static const char RED_LED_FILE[]
+        = "/sys/class/leds/red/brightness";
 
-char const*const GREEN_LED_FILE
-        = "/sys/class/leds/led:rgb_green/brightness";
+static const char GREEN_LED_FILE[]
+        = "/sys/class/leds/green/brightness";
 
-char const*const BLUE_LED_FILE
-        = "/sys/class/leds/led:rgb_blue/brightness";
+static const char BLUE_LED_FILE[]
+        = "/sys/class/leds/blue/brightness";
 
-char const*const LCD_FILE
+static const char LCD_FILE[]
         = "/sys/class/leds/lcd-backlight/brightness";
 
-char const*const RED_DUTY_PCTS_FILE
-        = "/sys/class/leds/led:rgb_red/duty_pcts";
+static const char RED_DUTY_PCTS_FILE[]
+        = "/sys/class/leds/red/duty_pcts";
 
-char const*const GREEN_DUTY_PCTS_FILE
-        = "/sys/class/leds/led:rgb_green/duty_pcts";
+static const char GREEN_DUTY_PCTS_FILE[]
+        = "/sys/class/leds/green/duty_pcts";
 
-char const*const BLUE_DUTY_PCTS_FILE
-        = "/sys/class/leds/led:rgb_blue/duty_pcts";
+static const char BLUE_DUTY_PCTS_FILE[]
+        = "/sys/class/leds/blue/duty_pcts";
 
-char const*const RED_START_IDX_FILE
-        = "/sys/class/leds/led:rgb_red/start_idx";
+static const char RED_START_IDX_FILE[]
+        = "/sys/class/leds/red/start_idx";
 
-char const*const GREEN_START_IDX_FILE
-        = "/sys/class/leds/led:rgb_green/start_idx";
+static const char GREEN_START_IDX_FILE[]
+        = "/sys/class/leds/green/start_idx";
 
-char const*const BLUE_START_IDX_FILE
-        = "/sys/class/leds/led:rgb_blue/start_idx";
+static const char BLUE_START_IDX_FILE[]
+        = "/sys/class/leds/blue/start_idx";
 
-char const*const RED_PAUSE_LO_FILE
-        = "/sys/class/leds/led:rgb_red/pause_lo";
+static const char RED_PAUSE_LO_FILE[]
+        = "/sys/class/leds/red/pause_lo";
 
-char const*const GREEN_PAUSE_LO_FILE
-        = "/sys/class/leds/led:rgb_green/pause_lo";
+static const char GREEN_PAUSE_LO_FILE[]
+        = "/sys/class/leds/green/pause_lo";
 
-char const*const BLUE_PAUSE_LO_FILE
-        = "/sys/class/leds/led:rgb_blue/pause_lo";
+static const char BLUE_PAUSE_LO_FILE[]
+        = "/sys/class/leds/blue/pause_lo";
 
-char const*const RED_PAUSE_HI_FILE
-        = "/sys/class/leds/led:rgb_red/pause_hi";
+static const char RED_PAUSE_HI_FILE[]
+        = "/sys/class/leds/red/pause_hi";
 
-char const*const GREEN_PAUSE_HI_FILE
-        = "/sys/class/leds/led:rgb_green/pause_hi";
+static const char GREEN_PAUSE_HI_FILE[]
+        = "/sys/class/leds/green/pause_hi";
 
-char const*const BLUE_PAUSE_HI_FILE
-        = "/sys/class/leds/led:rgb_blue/pause_hi";
+static const char BLUE_PAUSE_HI_FILE[]
+        = "/sys/class/leds/blue/pause_hi";
 
-char const*const RED_RAMP_STEP_MS_FILE
-        = "/sys/class/leds/led:rgb_red/ramp_step_ms";
+static const char RED_RAMP_STEP_MS_FILE[]
+        = "/sys/class/leds/red/ramp_step_ms";
 
-char const*const GREEN_RAMP_STEP_MS_FILE
-        = "/sys/class/leds/led:rgb_green/ramp_step_ms";
+static const char GREEN_RAMP_STEP_MS_FILE[]
+        = "/sys/class/leds/green/ramp_step_ms";
 
-char const*const BLUE_RAMP_STEP_MS_FILE
-        = "/sys/class/leds/led:rgb_blue/ramp_step_ms";
+static const char BLUE_RAMP_STEP_MS_FILE[]
+        = "/sys/class/leds/blue/ramp_step_ms";
 
-char const*const RED_BLINK_FILE
-        = "/sys/class/leds/led:rgb_red/blink";
+static const char RED_BLINK_FILE[]
+        = "/sys/class/leds/red/blink";
 
-char const*const GREEN_BLINK_FILE
-        = "/sys/class/leds/led:rgb_green/blink";
+static const char GREEN_BLINK_FILE[]
+        = "/sys/class/leds/green/blink";
 
-char const*const BLUE_BLINK_FILE
-        = "/sys/class/leds/led:rgb_blue/blink";
+static const char BLUE_BLINK_FILE[]
+        = "/sys/class/leds/blue/blink";
 
 #define RAMP_SIZE 8
 static int BRIGHTNESS_RAMP[RAMP_SIZE]
