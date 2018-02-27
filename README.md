@@ -14,7 +14,8 @@ Lenovo Z2 Plus was announced in September 2016. Release date was September 2016.
 | CPU          | Quad-core (2x2.15 GHz Kryo & 2x1.6 GHz Kryo)    |
 | GPU          | 624MHz Adreno 530                               |
 | Memory       | 3 / 4 GB (LPDDR4 1866MHz dual-channel)          |
-| Shipped Android version | 6.0.1                                |
+| Shipped Android version | 6.0.1   
+| Upgradable Android version| 7.0/(8.0 china only)
 | Storage      | 32 / 64 GB (eMMC 5.1)                           |
 | Battery      | Non-removable Li-Po 3500 mAh                    |
 | Dimensions   | 68.88 x 141.65 x 8.45 mm                        |
