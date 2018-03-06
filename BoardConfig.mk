@@ -39,7 +39,7 @@ TARGET_PROVIDES_LIBLIGHT := true
 TARGET_KERNEL_CONFIG := z2_plus_defconfig
 
 # Properties
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # inherit from the proprietary version
 -include vendor/zuk/z2_plus/BoardConfigVendor.mk
