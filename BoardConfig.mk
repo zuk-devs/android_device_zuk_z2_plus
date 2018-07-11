@@ -1,5 +1,6 @@
-# Copyright (C) 2013-2016, The CyanogenMod Project
-# Copyright (C) 2017-2018, The LineageOS Project
+#
+# Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2017 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,13 +13,6 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
-#
-# This file sets variables that control the way modules are built
-# thorughout the system. It should not be used to conditionally
-# disable makefiles (the proper mechanism to control what gets
-# included in a build is to use PRODUCT_PACKAGES in a product
-# definition file).
 #
 
 # Inherit from common msm8996-common
@@ -32,14 +26,11 @@ TARGET_OTA_ASSERT_DEVICE := z2,Z2,z2plus,z2_plus
 # Audio
 AUDIO_FEATURE_ENABLED_SPKR_PROTECTION := true
 
-# Lights
-TARGET_PROVIDES_LIBLIGHT := true
-
 # Kernel
 TARGET_KERNEL_CONFIG := z2_plus_defconfig
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
-# inherit from the proprietary version
+# Inherit from the proprietary version
 -include vendor/zuk/z2_plus/BoardConfigVendor.mk
