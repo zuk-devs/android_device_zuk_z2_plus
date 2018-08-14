@@ -40,3 +40,6 @@ PRODUCT_PACKAGES += \
 
 # MSM8996 Headers
 PRODUCT_VENDOR_KERNEL_HEADERS := hardware/qcom/msm8996/kernel-headers
+
+# Vendor properties
+-include $(LOCAL_PATH)/vendor_prop.mk
