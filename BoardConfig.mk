@@ -32,9 +32,6 @@ TARGET_OTA_ASSERT_DEVICE := z2,Z2,z2plus,z2_plus
 # Audio
 AUDIO_FEATURE_ENABLED_SPKR_PROTECTION := true
 
-# Lights
-TARGET_PROVIDES_LIBLIGHT := true
-
 # Kernel
 TARGET_KERNEL_CONFIG := z2_plus_defconfig
 

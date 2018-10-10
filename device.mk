@@ -34,12 +34,5 @@ PRODUCT_COPY_FILES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-# Ramdisk
-PRODUCT_PACKAGES += \
-    init.zuk.usb.rc
-
-# MSM8996 Headers
-PRODUCT_VENDOR_KERNEL_HEADERS := hardware/qcom/msm8996/kernel-headers
-
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_prop.mk
