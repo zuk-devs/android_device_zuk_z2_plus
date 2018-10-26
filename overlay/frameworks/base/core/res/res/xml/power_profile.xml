@@ -1,35 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <device name="Android">
-    <item name="none">0</item>
     <item name="screen.on">200</item>
     <item name="screen.full">360</item>
-    <item name="bluetooth.active">20</item>
-    <item name="bluetooth.on">1</item>
-    <item name="wifi.on">2</item>
-    <item name="wifi.active">30</item>
-    <item name="wifi.scan">100</item>
-    <item name="dsp.audio">10</item>
     <item name="dsp.video">100</item>
-    <item name="gps.on">50</item>
     <item name="camera.avg">800</item>
-    <item name="radio.active">350</item>
-    <item name="radio.scanning">10</item>
-    <array name="radio.on">
-        <value>30</value>
-        <value>30</value>
-        <value>25</value>
-        <value>10</value>
-        <value>5</value>
-        <value>5</value>
-    </array>
+    <item name="modem.controller.sleep">0</item>
     <item name="modem.controller.idle">0.5</item>
     <item name="modem.controller.rx">100</item>
     <item name="modem.controller.tx">100</item>
-    <item name="modem.controller.voltage">3.7</item>
+    <item name="modem.controller.voltage">3700</item>
+    <!-- GPS related values.-->
+    <array name="gps.signalqualitybased"> <!-- Strength 0 to 1 -->
+        <value>49</value>
+        <value>11</value>
+    </array>
+    <item name="gps.voltage">3700</item>
+
+    <!-- Idle current for bluetooth in mA.-->
+    <item name="bluetooth.controller.idle">0.01</item>
+    <!-- Rx current for bluetooth in mA.-->
+    <item name="bluetooth.controller.rx">8</item>
+    <!-- Tx current for bluetooth in mA-->
+    <item name="bluetooth.controller.tx">7</item>
+    <!-- Operating voltage for bluetooth in mV.-->
+    <item name="bluetooth.controller.voltage">3300</item>
+
     <array name="cpu.clusters.cores">
         <value>2</value>
         <value>2</value>
     </array>
+
+    <!-- Additional power used when video is playing -->
+    <item name="video">50.93</item>
+    <!-- Additional power used when audio is playing -->
+    <item name="audio">75.60</item>
+
+    <!-- Power consumption when CPU is suspended -->
+    <item name="cpu.suspend">5.734</item>
+    <!-- Additional power consumption when CPU is in a kernel idle loop -->
+    <item name="cpu.idle">1.389</item>
+
+    <!-- Additional power consumption by CPU excluding cluster and core when
+         running -->
+    <item name="cpu.active">18.760</item>
+
+    <!-- Additional power consumption by CPU cluster0 itself when running
+         excluding cores in it -->
+    <item name="cpu.cluster_power.cluster0">14.748</item>
+    <!-- Additional power consumption by CPU cluster1 itself when running
+         excluding cores in it -->
+    <item name="cpu.cluster_power.cluster1">21.155</item>
+
     <array name="cpu.core_speeds.cluster0">
         <value>307200</value>
         <value>422400</value>
@@ -74,8 +95,6 @@
         <value>2073600</value>
         <value>2150400</value>
     </array>
-    <item name="cpu.idle">10</item>
-    <item name="cpu.awake">30</item>
     <array name="cpu.core_power.cluster0">
         <value>40</value>
         <value>48</value>
@@ -125,12 +144,5 @@
     <item name="wifi.controller.rx">40</item>
     <item name="wifi.controller.tx">40</item>
     <array name="wifi.controller.tx_levels" />
-    <item name="wifi.controller.voltage">3.7</item>
-    <array name="wifi.batchedscan">
-        <value>0.015</value>
-        <value>0.122</value>
-        <value>0.962</value>
-        <value>7.682</value>
-        <value>61.488</value>
-    </array>
+    <item name="wifi.controller.voltage">3700</item>
 </device>
