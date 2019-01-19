@@ -47,5 +47,4 @@ vendor/lib/libmmcamera_ov8865.so
 vendor/lib/libmmcamera_s5k2m8sx.so
 
 # Sensors
-vendor/etc/sensors/hals.conf
 vendor/etc/sensors/sensor_def_qcomdev.conf
