@@ -30,5 +30,9 @@ PRODUCT_COPY_FILES += \
 # Inherit from msm8996-common
 $(call inherit-product, device/zuk/msm8996-common/msm8996.mk)
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+    init.zuk.rc
+
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_prop.mk
