@@ -15,3 +15,8 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_z2_plus.mk
+
+COMMON_LUNCH_CHOICES := \
+    lineage_z2_plus-user \
+    lineage_z2_plus-userdebug \
+    lineage_z2_plus-eng
