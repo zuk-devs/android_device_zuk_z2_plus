@@ -2409,6 +2409,11 @@
         <ctl name="MAD Input" value="DMIC0" />
     </path>
 
+    <path name="unprocessed-mic">
+        <path name="adc1" />
+        <ctl name="ADC1 Volume" value="12" />
+    </path>
+
     <!-- Added for ADSP testfwk -->
     <path name="ADSP testfwk">
         <ctl name="SLIMBUS_DL_HL Switch" value="1" />
