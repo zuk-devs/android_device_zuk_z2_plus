@@ -46,3 +46,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := "ZUK/z2_plus/z2_plus:7.0/NRD90M/3.1.117_171110:user/release-keys"
+
+# Signing Keys
+PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/oss/keys/releasekey
