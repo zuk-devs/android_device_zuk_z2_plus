@@ -22,14 +22,15 @@
 #
 
 # Inherit from vendor
-$(call inherit-product-if-exists, vendor/zuk/z2_plus/z2_plus-vendor.mk)
+$(call inherit-product-if-exists, vendor/zuk/z2/z2x-vendor.mk)
 
 # Inherit from msm8996-common
 $(call inherit-product, device/zuk/msm8996-common/msm8996.mk)
 
+# Audio
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
-    $(LOCAL_PATH)/audio/mixer_paths_tasha.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
+    $(LOCAL_PATH)/audio/mixer_paths_tasha.xml:system/etc/mixer_paths_tasha.xml \
+    $(LOCAL_PATH)/audio/audio_platform_info.xml:system/etc/audio_platform_info.xml 
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -42,3 +43,10 @@ PRODUCT_PACKAGES += \
 
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_prop.mk
+
+# Fix ADB
+ADDITIONAL_DEFAULT_PROPERTIES += \
+ro.secure=0 \
+ro.debuggable=1 \
+persist.sys.usb.config=mtp \
+ro.adb.secure=0
