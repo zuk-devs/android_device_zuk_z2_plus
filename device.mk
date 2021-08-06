@@ -44,9 +44,3 @@ PRODUCT_PACKAGES += \
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_prop.mk
 
-# Fix ADB
-ADDITIONAL_DEFAULT_PROPERTIES += \
-ro.secure=0 \
-ro.debuggable=1 \
-persist.sys.usb.config=mtp \
-ro.adb.secure=0
