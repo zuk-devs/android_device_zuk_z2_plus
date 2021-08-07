@@ -1,0 +1,4 @@
+# Display (Qualcomm AD)
+ro.qualcomm.cabl=0
+# Graphics
+ro.sf.lcd_density=460

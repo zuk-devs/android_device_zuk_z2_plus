@@ -24,16 +24,18 @@
 # Inherit from common msm8996-common
 -include device/zuk/msm8996-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/zuk/z2_plus
+DEVICE_PATH := device/zuk/z2x
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := z2,Z2,z2plus,z2_plus
+TARGET_OTA_ASSERT_DEVICE := z2x
 
 # Audio
 AUDIO_FEATURE_ENABLED_SPKR_PROTECTION := true
 
 # Kernel
-TARGET_KERNEL_CONFIG := z2_plus_defconfig
+TARGET_KERNEL_CONFIG := z2x_defconfig
+
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # inherit from the proprietary version
--include vendor/zuk/z2_plus/BoardConfigVendor.mk
+-include vendor/zuk/z2x/BoardConfigVendor.mk
